@@ -15,7 +15,7 @@ CONCISE_COUNT = 5
 
 
 def leftpad_print(s, leftpad_length=0):
-    print(" " * leftpad_length + s)
+    print(" " * leftpad_length + s.encode('ascii', 'ignore'))
 
 
 def organization(ghapi, *args, **kwargs):
